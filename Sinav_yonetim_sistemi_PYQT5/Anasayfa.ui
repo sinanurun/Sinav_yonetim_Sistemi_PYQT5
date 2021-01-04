@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Anaekran</class>
+ <widget class="QMainWindow" name="Anaekran">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>120</y>
+      <width>481</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Kelebek Sınav Dağıtım Programına Hoş Geldiniz &lt;br/&gt;Yapmak İstediğiniz İşlem İçin Menüleri Kullanınız&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>551</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Okul A dı</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>701</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Dağıtım Adı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Dağıtım Tarihi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sınıf Listesi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Salon Listesi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Toplu Liste</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Dağıtımı Sil</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBilgiler">
+    <property name="title">
+     <string>Bilgiler</string>
+    </property>
+    <widget class="QMenu" name="menusubeislemleri">
+     <property name="title">
+      <string>Şube Bilgileri Giriş ve Güncelleme</string>
+     </property>
+     <addaction name="SubeisimleriGuncelle"/>
+     <addaction name="SubeListesi"/>
+    </widget>
+    <widget class="QMenu" name="menusfizikiislemler">
+     <property name="title">
+      <string>Fiziki Sınıf Giriş ve Güncelleme</string>
+     </property>
+     <addaction name="SinavyeriGuncelle"/>
+     <addaction name="KapasiteGuncelle"/>
+    </widget>
+    <addaction name="OkulBilgileriGuncelle"/>
+    <addaction name="menusubeislemleri"/>
+    <addaction name="menusfizikiislemler"/>
+    <addaction name="cikis"/>
+   </widget>
+   <widget class="QMenu" name="menudagitim">
+    <property name="title">
+     <string>Dağıtım</string>
+    </property>
+    <addaction name="YeniDagitim_2"/>
+    <addaction name="EskiDagitimlar"/>
+   </widget>
+   <addaction name="menuBilgiler"/>
+   <addaction name="menudagitim"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="OkulBilgileriGuncelle">
+   <property name="text">
+    <string>Okul Bilgilerini Güncelle</string>
+   </property>
+  </action>
+  <action name="EskiDagitimlar">
+   <property name="text">
+    <string>Eski Dağıtımlar</string>
+   </property>
+  </action>
+  <action name="SubeisimleriGuncelle">
+   <property name="text">
+    <string>Şube isimleri Güncelle</string>
+   </property>
+  </action>
+  <action name="SubeListesi">
+   <property name="text">
+    <string>Şube Listelerini Güncelle</string>
+   </property>
+  </action>
+  <action name="SinavyeriGuncelle">
+   <property name="text">
+    <string>Sınav Yeri Güncelle</string>
+   </property>
+  </action>
+  <action name="KapasiteGuncelle">
+   <property name="text">
+    <string>Kapasiteleri Güncelle</string>
+   </property>
+  </action>
+  <action name="actionDa_t_m_Yap">
+   <property name="text">
+    <string>Dağıtım Yap</string>
+   </property>
+  </action>
+  <action name="cikis">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="YeniDagitim_2">
+   <property name="text">
+    <string>Yeni Dağıtım</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cikis</sender>
+   <signal>triggered()</signal>
+   <receiver>Anaekran</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>triggered()</signal>
+ </slots>
+</ui>

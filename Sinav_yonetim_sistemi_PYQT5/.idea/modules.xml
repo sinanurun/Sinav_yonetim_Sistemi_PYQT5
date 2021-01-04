@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/162132064 _SinanURUN_Kelebek.iml" filepath="$PROJECT_DIR$/.idea/162132064 _SinanURUN_Kelebek.iml" />
+      <module fileurl="file://D:/Ayu_Proje_facebook/.idea/Ayu_Proje_facebook.iml" filepath="D:/Ayu_Proje_facebook/.idea/Ayu_Proje_facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../proje derya murat/bim_destek/.idea/bim_destek.iml" filepath="$PROJECT_DIR$/../../proje derya murat/bim_destek/.idea/bim_destek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sqlorm/.idea/sqlorm.iml" filepath="$PROJECT_DIR$/../sqlorm/.idea/sqlorm.iml" />
+    </modules>
+  </component>
+</project>

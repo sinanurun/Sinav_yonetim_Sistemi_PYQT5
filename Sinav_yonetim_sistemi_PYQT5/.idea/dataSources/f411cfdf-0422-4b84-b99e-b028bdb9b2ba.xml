@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="kelebek">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.14">
+    <root id="1">
+      <ServerVersion>3.25.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="dagitim_listeleri"/>
+    <table id="7" parent="2" name="fiziki_sinif"/>
+    <table id="8" parent="2" name="ogrenci_listeleri"/>
+    <table id="9" parent="2" name="okul_bilgileri"/>
+    <table id="10" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="11" parent="2" name="sube_bilgileri"/>
+    <column id="12" parent="6" name="dagitim_id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="6" name="dagitim_adi">
+      <Position>2</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <column id="14" parent="6" name="dagitim_tarihi">
+      <Position>3</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <column id="15" parent="6" name="dsinif_listesi">
+      <Position>4</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <column id="16" parent="6" name="dfsinif_listesi">
+      <Position>5</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <column id="17" parent="6" name="dtoplu_liste">
+      <Position>6</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <index id="18" parent="6" name="sqlite_autoindex_dagitim_listeleri_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dagitim_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="6">
+      <ColNames>dagitim_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_dagitim_listeleri_1</UnderlyingIndexName>
+    </key>
+    <key id="20" parent="6">
+      <ColNames>dagitim_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_dagitim_listeleri_1</UnderlyingIndexName>
+    </key>
+    <column id="21" parent="7" name="fsinif_id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="7" name="fsinif_adi">
+      <Position>2</Position>
+      <DataType>VARCHAR(250)|0s</DataType>
+    </column>
+    <column id="23" parent="7" name="fsinif__mevcut">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <index id="24" parent="7" name="sqlite_autoindex_fiziki_sinif_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fsinif_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="25" parent="7" name="sqlite_autoindex_fiziki_sinif_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fsinif_adi</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="7">
+      <ColNames>fsinif_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_fiziki_sinif_1</UnderlyingIndexName>
+    </key>
+    <key id="27" parent="7">
+      <ColNames>fsinif_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_fiziki_sinif_1</UnderlyingIndexName>
+    </key>
+    <key id="28" parent="7">
+      <ColNames>fsinif_adi</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_fiziki_sinif_2</UnderlyingIndexName>
+    </key>
+    <column id="29" parent="8" name="ogrenci_id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="8" name="ogrenci_no">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="31" parent="8" name="ogrenci_adi">
+      <Position>3</Position>
+      <DataType>VARCHAR(100)|0s</DataType>
+    </column>
+    <column id="32" parent="8" name="sube_id">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <index id="33" parent="8" name="sqlite_autoindex_ogrenci_listeleri_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ogrenci_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="34" parent="8" name="sqlite_autoindex_ogrenci_listeleri_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ogrenci_no</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="8">
+      <ColNames>ogrenci_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_ogrenci_listeleri_1</UnderlyingIndexName>
+    </key>
+    <key id="36" parent="8">
+      <ColNames>ogrenci_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_ogrenci_listeleri_1</UnderlyingIndexName>
+    </key>
+    <key id="37" parent="8">
+      <ColNames>ogrenci_no</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_ogrenci_listeleri_2</UnderlyingIndexName>
+    </key>
+    <foreign-key id="38" parent="8">
+      <ColNames>sube_id</ColNames>
+      <RefTableName>sube_bilgileri</RefTableName>
+      <RefColNames>sube_id</RefColNames>
+    </foreign-key>
+    <column id="39" parent="9" name="kurum_kodu">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="9" name="kurum_adi">
+      <Position>2</Position>
+      <DataType>VARCHAR(250)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="9" name="kurum_sifre">
+      <Position>3</Position>
+      <DataType>VARCHAR(250)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="9" name="sube_sayisi">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="9" name="fsinif_sayisi">
+      <Position>5</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="44" parent="9" name="sqlite_autoindex_okul_bilgileri_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>kurum_kodu</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="9">
+      <ColNames>kurum_kodu</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_okul_bilgileri_1</UnderlyingIndexName>
+    </key>
+    <key id="46" parent="9">
+      <ColNames>kurum_kodu</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_okul_bilgileri_1</UnderlyingIndexName>
+    </key>
+    <column id="47" parent="10" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="48" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="49" parent="10" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="50" parent="10" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="51" parent="10" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="52" parent="11" name="sube_id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="11" name="sube_adi">
+      <Position>2</Position>
+      <DataType>VARCHAR(250)|0s</DataType>
+    </column>
+    <column id="54" parent="11" name="sube_mevcut">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="55" parent="11" name="sube_ogrenci">
+      <Position>4</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <index id="56" parent="11" name="sqlite_autoindex_sube_bilgileri_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sube_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="57" parent="11" name="sqlite_autoindex_sube_bilgileri_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sube_adi</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="58" parent="11">
+      <ColNames>sube_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_sube_bilgileri_1</UnderlyingIndexName>
+    </key>
+    <key id="59" parent="11">
+      <ColNames>sube_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_sube_bilgileri_1</UnderlyingIndexName>
+    </key>
+    <key id="60" parent="11">
+      <ColNames>sube_adi</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_sube_bilgileri_2</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

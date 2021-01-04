@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Okul Bilgilerini Güncelle</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">fg:rgb(85, 255, 0)</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>281</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="kurumKoduLabel">
+      <property name="text">
+       <string>Kurum Kodu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="kurum_kodu"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="kurumIfresiLabel">
+      <property name="text">
+       <string>Kurum Şifresi</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="kurum_sifresi"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="okulAdLabel">
+      <property name="text">
+       <string>Okul Adı</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="kurum_adi"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="ubeSaySLabel">
+      <property name="text">
+       <string>Şube Sayısı</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="sube_sayisi"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="sNavYeriSaySLabel">
+      <property name="text">
+       <string>Sınav Yeri Sayısı</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="sinav_yeri_sayisi"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="kurumGuncelle">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>190</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Güncelle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>250</y>
+     <width>321</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 127);</string>
+   </property>
+   <property name="text">
+    <string>Bilgileriniz güncellenmiştir</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
